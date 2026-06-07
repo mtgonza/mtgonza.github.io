@@ -133,6 +133,11 @@ svg {
     grid-template-areas: 
         "photo"
         "about";
+
+    @media (width > 768px) {
+        grid-template-areas: "about photo";
+        gap: 50px;
+    }
 }
 
 .about {
@@ -140,12 +145,21 @@ svg {
     padding: 10px;
     margin: 0 5px 0 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
+    @media (width > 768px) {
+        margin-left: 100px;
+    }
 }
 
 .profile-photo-container {
     grid-area: photo;
     margin-top: 25px;
+    @media (width > 768px) {
+        margin-right: 100px;
+    }
 }
 
 .profile-photo {
@@ -156,10 +170,10 @@ svg {
     margin-inline: auto;
     border: 4px solid var(--border-light);
     
-    /* @media (width > 768px) {
-        width: 200px;
-        height: 200px;
-    } */
+    @media (width > 768px) {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /* CSS for main section */
