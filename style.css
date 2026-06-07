@@ -228,3 +228,7 @@ p, div {
 .skills {
     margin: 0 5px 0 5px;
 }
+
+#about, #projects, #skills {
+    scroll-margin-top: 140px;
+}
