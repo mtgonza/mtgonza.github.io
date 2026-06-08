@@ -30,6 +30,14 @@ body {
     margin-top: 0;
 }
 
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    margin-left: 5px;
+}
+
 a {
     color: var(--accent-primary);
 }
@@ -39,24 +47,17 @@ img {
     max-inline-size: 100%;
 }
 
-h1 {
-    font-size: 2.4rem;
-    /* @media (width > 768px) {
-        font-size: 2.4rem;
-    } */
+svg {
+    vertical-align: sub;
 }
 
-h2 {
-    margin-left: 5px;
+p, div {
+    font-size: 1.125rem;    
 }
 
 footer {
     text-align: center;
     border-top: 1.5px solid var(--border-light);
-}
-
-svg {
-    vertical-align: sub;
 }
 
 .wrapper {
@@ -84,7 +85,6 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* height: 100%; */
 
     @media (width > 768px) {
         text-align: left;
@@ -128,6 +128,7 @@ svg {
     }
 }
 
+/* CSS for about section */
 .about-section {
     display: grid;
     grid-template-areas: 
@@ -177,6 +178,7 @@ svg {
 }
 
 /* CSS for main section */
+/* CSS for projects section */
 .project {
     display: grid;
     grid-template-areas:
@@ -223,26 +225,18 @@ svg {
 
 .project-info {
     grid-area: info;
-    /* padding: 0 1rem 0 1rem; */
-}
-
-p, div {
-    font-size: 1.125rem;    
 }
 
 .project-info h3 {
     font-size: 1.125rem;    
 }
 
-/* .project-info h3 {
-    margin: 0;
-    padding: 0;
-} */
-
+/* CSS for skills section */
 .skills {
     margin: 0 5px 0 5px;
 }
 
+/* ids for navigation scrolling */
 #about, #projects, #skills {
     scroll-margin-top: 140px;
 }
