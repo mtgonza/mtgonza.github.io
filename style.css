@@ -136,7 +136,9 @@ footer {
         "about";
 
     @media (width > 768px) {
+        margin-top: 25px;
         grid-template-areas: "about photo";
+        grid-template-columns: 1fr auto;
         gap: 50px;
     }
 }
@@ -152,14 +154,18 @@ footer {
 
     @media (width > 768px) {
         margin-left: 100px;
+        justify-content: center;
     }
 }
 
 .profile-photo-container {
     grid-area: photo;
     margin-top: 25px;
+    /* align-self: center; */
+
     @media (width > 768px) {
         margin-right: 100px;
+        margin-top: auto;
     }
 }
 
