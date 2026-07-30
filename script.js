@@ -1,9 +1,20 @@
-// document.querySelectorAll('.primary-nav a').forEach
+// smooth scrolling navigation
+function handleNavClick(e) {
+    e.preventDefault();
 
-const navLinks = document.querySelectorAll('.primary-nav a');
-console.log("num nav links: ", navLinks.length);
-console.log("the links are", navLinks);
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
 
-navLinks.forEach((link, index) => {
-    console.log(`Link ${index + 1}:`, link.textContent, "-> goes to", link.getAttribute('href'));
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    } else {
+        console.error("Section not found: ", targerID);
+    }
+}
+
+document.querySelectorAll('.primary-nav a').forEach(link => {
+    link.addEventListener('click', handleNavClick);
 });
